@@ -14,6 +14,11 @@ def operacion_basica(a: float, b: float, multiplicar: bool) -> Union[float, str]
         - Utilizar IF con ELIF con ELSE.
         - No utilizar AND ni OR.
     """
+    if multiplicar: x =  a * b
+    elif  b == 0: x =  "Operación no válida"
+    else:
+        x = a / b
+    return x 
 
 
 # NO MODIFICAR - INICIO
@@ -40,6 +45,12 @@ def operacion_multiple(a: float, b: float, multiplicar: bool) -> Union[float, st
         - No utilizar ELIF ni ELSE.
         - No utilizar AND ni OR.
     """
+    if multiplicar: 
+        return a*b 
+    if b != 0: 
+        return a/b
+    return "Operación no válida" 
+
 
 
 # NO MODIFICAR - INICIO
